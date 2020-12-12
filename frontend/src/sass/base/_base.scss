@@ -1,0 +1,333 @@
+@import '../colors/color';
+
+body{
+	display: flex;
+    justify-content: center;
+}
+
+.container{
+	max-width: 1200px;
+	display: flex;
+	justify-content: space-between;
+
+	label, h1, h3 {
+		word-break: break-all;
+	}
+
+	.btns{
+		display: flex;
+		width: 100%;
+		margin-bottom: 10px;
+		input{
+			font-size: 16px;
+			padding: 10px 25px;
+			color: $white;
+			background-color: $black;
+			border: 1px solid $inpBorder;
+			// letter-spacing: 2px;
+			border-radius: 2px;
+			background-clip: padding-box;
+			transition: color 0.2s linear, background-color 0.2s linear;
+			line-height: 1.3333333;
+			display: inline-block;
+			text-align: center;
+			white-space: nowrap;
+			vertical-align: middle;
+			touch-action: manipulation;
+			cursor: pointer;
+			user-select: none;
+			background-image: none;
+		}
+	}
+
+	select {
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		-ms-appearance: none;
+		appearance: none;
+		outline: 0;
+		box-shadow: none;
+		border: 0 !important;
+		background: $white;
+		background-image: none;
+	  }
+	  /* Remove IE arrow */
+	  select::-ms-expand {
+		display: none;
+	  }
+	  /* Custom Select */
+	  .select {
+		position: relative;
+		display: flex;
+		width: 92%;
+		height: 3em;
+		line-height: 3;
+		background: $backSelect;
+		overflow: hidden;
+		border-radius: .25em;
+	  }
+	  select {
+		flex: 1;
+		padding: 0 .5em;
+		color: $inpColor;
+		cursor: pointer;
+	  }
+	  /* Arrow */
+	  .select::after {
+		content: '\25BC';
+		position: absolute;
+		top: 0;
+		right: 0;
+		padding: 0 1em;
+		background:$darkgray;
+		cursor: pointer;
+		pointer-events: none;
+		-webkit-transition: .25s all ease;
+		-o-transition: .25s all ease;
+		transition: .25s all ease;
+	  }
+	  /* Transition */
+	  .select:hover::after {
+		color: #f39c12;
+	  }
+
+	.childContainer{
+		width: 65%;
+		margin-right: 30px;
+	}
+
+	.primaryClass{
+		border-style: groove;
+		border-width: 2px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+
+		.title{
+			width: 100%;
+			h3{
+				margin-left: 10px;
+			}
+
+			hr{
+				height: 3px;
+				background: $black;
+				border-width: 0;
+				background-color: $black;
+			}
+		}
+
+		form{
+			display: flex;
+			flex-wrap: wrap;
+			width: 65%;
+			justify-content: space-around;
+
+			.input-group{
+				display: flex;
+				align-items: center;
+				margin-bottom: 10px;
+				width: 49%;
+
+				.containerIcon{
+					background: $darkgray;
+					height: 100%;
+					width: 100px;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+				}
+
+				.sizeIcons {
+					font-size: 26px;
+				}
+
+				input{
+					width: 80%;
+					height: 34px;
+					padding: 6px 12px;
+					font-size: 14px;
+					line-height: 1.42857143;
+					color: $inpColor;
+					background-color: $basicWhite;
+					background-image: none;
+					border: 1px solid $basicGray;
+					box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+					transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+				}
+			}
+
+			.check{
+				display: flex;
+				width: 100%;
+				margin-bottom: 10px;
+				align-items: center;
+
+				input{
+					margin-right: 12px;
+				}
+				
+				input:checked ~ .check {
+					background-color: $white;
+					border:none;
+				}
+
+				label{
+					color: $labelCheck;
+				}
+			}
+		}
+	}
+
+	.secondClass{
+		width: 30%;
+		border-width: 2px;
+		border: solid 1px;
+		border-color: $background;
+
+		.title{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background-color: $background;
+		}
+
+		ul {
+			padding: 0px;
+			margin: 5px;
+			li {
+				list-style: none;
+				.containerList {
+					display: flex;
+					justify-content: space-between;
+					margin-bottom: 10px;
+					border: solid 0px;
+					border-bottom: 1px solid;
+					border-color:  $background;
+					padding-bottom: 5px;
+					div{
+						min-width: 30%;
+						display: flex;
+						justify-content: center;
+						padding-right: 3px;
+    					padding-left: 3px;
+					}
+					div:nth-child(3) {
+						justify-content: flex-end;
+						padding-right: 15px;
+					}
+				}
+			}
+		}
+
+		.btns{
+			justify-content: flex-end;
+
+			input{
+				margin-right: 15px;
+				background-color: $red;
+			}
+		}
+
+		.containerCalc{
+			background-color:$background;
+			padding-top: 15px;
+			padding-bottom: 25px;
+		}
+
+		.calc {
+			display: flex;
+			justify-content: space-between;
+			padding-left: 30px;
+			padding-right: 15px;
+			div{
+				width: 49%;
+			}
+			div:nth-child(2) {
+				text-align: right;
+			}
+		}	
+
+		.total{
+			background-color: $black;
+			padding-top: 15px;
+			padding-bottom: 15px;
+			color: $white;
+		}
+	}
+}
+
+@media only screen and (max-width : 880px) {
+	body{
+		display: block;
+		justify-content: initial;
+	}
+
+    .container{
+		display: block;
+		justify-content: initial;
+
+		.btns {
+			width: 88%;
+			flex-wrap: wrap;
+		}
+		.select{
+			width: 84%;
+		}
+
+		.childContainer{
+			text-align: center;
+			width: 80%;
+			margin-bottom: 20px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		.primaryClass{
+			form {
+				width: 100%;
+				.input-group{
+					width: 88%;
+				}
+
+				.check{
+					width: 88%;
+				}
+			}
+		}
+
+		.secondClass{
+			width: 80%; 
+			margin-left: auto;
+			margin-right: auto;
+
+			ul{
+				li{
+					.containerList{
+						div:nth-child(3) {
+							justify-content: flex-end;
+							padding-right: 10px;
+						}
+					} 
+				}
+			}
+
+			.btns{
+				width: 98%;
+				input{
+					margin-right: 0px;
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (max-width : 300px) {
+    .container{
+		.btns {
+			input{
+				width: 100%;
+			}
+		}
+	}
+}

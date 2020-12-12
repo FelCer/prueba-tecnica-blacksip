@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Test</title>
+
+    <!-- Testing how the files would look locally. -->
+    <!-- <link rel="stylesheet" href="dist/css/home.bdd0b275f341091e5576.css"> -->
+
+    <!-- Deveploment in progress-->
+    <link rel="stylesheet" href="/frontend/dist/css/home.css">
+
+    <!-- <script src="./dist/js/home.bdd0b275f341091e5576.js"></script> -->
+    <!-- <script src="/frontend/dist/js/home.js"></script> -->
+
+
+    <!--BEGIN MODE: development -->
+    <script src="/frontend/dist/js/modules.js"></script>
+    <script src="/js/home.js"></script>
+    <!-- END MODE: development -->
+</head>
+
+<body>
+    <div id="container" class="container">
+        <div class="childContainer">
+            <div class="primaryClass">
+                <div class="title">
+                    <h3>DIRECCIÓN DE ENVÍO</h3>
+                    <hr>
+                </div>
+                <form action="">
+                    <div class="input-group">
+                        <div class="containerIcon">
+                            <span class="sizeIcons">
+                                <i class="fas fa-user"></i>
+                            </span>
+                        </div>
+                        <input type="text" id="name" placeholder="Nombre">
+                    </div>
+                    <div class="input-group">
+                        <div class="containerIcon">
+                            <span class="sizeIcons">
+                                <i class="fas fa-user"></i>
+                            </span>
+                        </div>
+                        <input type="text" id="lastname" placeholder="Apellidos">
+                    </div>
+
+                    <div class="input-group">
+                        <div class="containerIcon">
+                            <span class="sizeIcons">
+                                <i class="fas fa-envelope"></i>
+                            </span>
+                        </div>
+                        <input type="email" id="email" placeholder="Correo Electrónico">
+                    </div>
+                    <div class="input-group">
+                        <div class="containerIcon">
+                            <span class="sizeIcons">
+                                <i class="fas fa-phone-alt"></i>
+                            </span>
+                        </div>
+                        <input type="text" id="telephone" placeholder="Número de telefono">
+                    </div>
+
+                    <div class="input-group">
+                        <div class="containerIcon">
+                            <span class="sizeIcons">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </span>
+                        </div>
+                        <div  class="select">
+                            <select name="slct" id="slct">
+                                <option selected disabled>Seleccion</option>
+                                <option value="11000">11000</option>
+                                <option value="89000">89000</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <div class="containerIcon">
+                            <span class="sizeIcons">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </span>
+                        </div>
+                        <input type="text" id="suburb" placeholder="Colonia">
+                    </div>
+
+                    <div class="input-group">
+                        <div class="containerIcon">
+                            <span class="sizeIcons">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </span>
+                        </div>
+                        <input type="email" id="region" placeholder="Estado/Región">
+                    </div>
+                    <div class="input-group">
+                        <div class="containerIcon">
+                            <span class="sizeIcons">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </span>
+                        </div>
+                        <input type="text" id="city" placeholder="Ciudad">
+                    </div>
+
+                    <div class="input-group">
+                        <div class="containerIcon">
+                            <span class="sizeIcons">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </span>
+                        </div>
+                        <input type="email" id="town" placeholder="Delegación o municipio">
+                    </div>
+                    <div class="input-group">
+                        <div class="containerIcon">
+                            <span class="sizeIcons">
+                                <i class="fas fa-map-marked-alt"></i>
+                            </span>
+                        </div>
+                        <input type="text" id="street" placeholder="Calle">
+                    </div>
+
+                    <div class="btns">
+                        <input type="button" value="Libreta de direcciones">
+                        <input type="button" value="Guardar" id="save">
+                    </div>
+
+                    <div class="check">
+                        <input type="checkbox" id="cbox1" value="first_checkbox" class="miche">
+                        <label>Utilizar como direccion de facturación.</label>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="secondClass">
+            <div class="title">
+                <h3>
+                    RESUMEN DE LA ORDEN
+                </h3>
+            </div>
+            <div>
+                <div id="listBuy">
+                </div>
+                <div class="btns">
+                    <input type="button" value="Editar">
+                </div>
+
+                <div class="containerCalc">
+                    <div class="calc">
+                        <div>SUBTOTAL</div>
+                        <div>$13.974</div>
+                    </div>
+                    <div class="calc">
+                        <div>ENVÍO</div>
+                        <div>A CALCULAR</div>
+                    </div>
+                </div>
+
+                <div class="total">
+                    <div class="calc">
+                        <div>TOTAL</div>
+                        <div>$13.974</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
